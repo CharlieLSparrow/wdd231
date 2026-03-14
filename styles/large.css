@@ -1,0 +1,26 @@
+/* Media Query for screens 768px and up */
+@media (min-width: 768px) {
+    /* Hide Hamburger */
+    #menu-button {
+        display: none;
+    }
+
+    /* Horizontal Nav */
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* 2 Column layout for top sections */
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* 3 Column Grid for courses */
+    #course-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
