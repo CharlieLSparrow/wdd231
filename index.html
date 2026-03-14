@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Course Home Page for Charlie Sparrow">
+    <meta name="description" content="WDD 231 Course Home Page for Charlie Sparrow, featuring coursework, certificates, and web development projects.">
     <meta name="author" content="Charlie Sparrow">
     <title>Course Home Page | Charlie Sparrow</title>
+    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
@@ -17,6 +23,40 @@
         <span>Charlie Sparrow</span>
         <button id="menu-button" aria-label="Open Navigation">☰</button>
     </header>
+
+    <nav id="main-nav">
+        <a href="#" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="github/index.html">GitHub</a>
+        <a href="final/index.html">Final</a>
+    </nav>
+
+    <main>
+        <h1>Course Home Page</h1>
+        
+        <div class="content-grid">
+            <section class="card">
+                <h2>Coursework</h2>
+                <p>Content for your coursework section goes here.</p>
+            </section>
+
+            <section class="card">
+                <h2>Location</h2>
+                <p>Manti, Utah</p>
+            </section>
+        </div>
+
+        <section class="certificate-section card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="filter-buttons">
+                <button id="btn-all">All</button>
+                <button id="btn-cse">CSE</button>
+                <button id="btn-wdd">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <p class="credits-display">Total Credits: <span id="credit-total">0</span></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> | Charlie Sparrow | Utah</p>
