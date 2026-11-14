@@ -293,7 +293,7 @@ h1, h2, h3, .brand-title {
   color: var(--link-color);
   font-weight: 700;
   text-decoration: underline;
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .member-link:hover {
