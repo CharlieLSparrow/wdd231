@@ -1,84 +1,68 @@
 {
-  "members": [
-    {
-      "name": "Blendtec",
-      "address": "1206 S 1680 W, Orem, UT 84058",
-      "phone": "(800) 748-5400",
-      "website": "https://www.blendtec.com",
-      "image": "images/blendtec.webp",
-      "membershipLevel": 3,
-      "category": "Manufacturing & Technology",
-      "tagline": "Commercial and residential high-speed blenders engineered in Orem."
-    },
-    {
-      "name": "Utah Valley University (UVU)",
-      "address": "800 W University Pkwy, Orem, UT 84058",
-      "phone": "(801) 863-8888",
-      "website": "https://www.uvu.edu",
-      "image": "images/uvu.webp",
-      "membershipLevel": 3,
-      "category": "Higher Education",
-      "tagline": "Utah's largest public university driving regional workforce innovation."
-    },
-    {
-      "name": "SCERA Center for the Arts",
-      "address": "745 S State St, Orem, UT 84058",
-      "phone": "(801) 225-2787",
-      "website": "https://scera.org",
-      "image": "images/scera.webp",
-      "membershipLevel": 2,
-      "category": "Arts & Entertainment",
-      "tagline": "Non-profit cultural arts center and outdoor amphitheater since 1933."
-    },
-    {
-      "name": "University Place Orem",
-      "address": "575 E University Pkwy, Orem, UT 84097",
-      "phone": "(801) 224-0694",
-      "website": "https://www.universityplaceorem.com",
-      "image": "images/university-place.webp",
-      "membershipLevel": 3,
-      "category": "Retail & Mixed-Use Development",
-      "tagline": "120-acre retail, dining, residential, and community orchard hub."
-    },
-    {
-      "name": "Tucanos Brazilian Grill",
-      "address": "545 E University Pkwy, Orem, UT 84097",
-      "phone": "(801) 224-4774",
-      "website": "https://www.tucanos.com",
-      "image": "images/tucanos.webp",
-      "membershipLevel": 2,
-      "category": "Dining & Hospitality",
-      "tagline": "Festive Brazilian churrascaria founded right here in Orem."
-    },
-    {
-      "name": "Clyde Companies",
-      "address": "730 N 1500 W, Orem, UT 84057",
-      "phone": "(801) 802-6900",
-      "website": "https://www.clydeinc.com",
-      "image": "images/clyde-companies.webp",
-      "membershipLevel": 3,
-      "category": "Construction & Civil Engineering",
-      "tagline": "Building a Better Community across the Intermountain West since 1926."
-    },
-    {
-      "name": "JCW's The Burger Boys",
-      "address": "396 E University Pkwy, Orem, UT 84058",
-      "phone": "(801) 225-5297",
-      "website": "https://www.jcws.com",
-      "image": "images/jcws.webp",
-      "membershipLevel": 1,
-      "category": "Restaurants",
-      "tagline": "Utah County's favorite gourmet burgers, shakes, and fry sauce."
-    },
-    {
-      "name": "Mountainland Technical College (MTECH)",
-      "address": "1410 W 1250 S, Orem, UT 84058",
-      "phone": "(801) 753-4100",
-      "website": "https://mtec.edu",
-      "image": "images/mtec.webp",
-      "membershipLevel": 2,
-      "category": "Technical Education",
-      "tagline": "Hands-on technical training in software, healthcare, and trades."
-    }
-  ]
+    "members": [
+        {
+            "name": "Blendtec",
+            "address": "1206 S 1680 W, Orem, UT 84058",
+            "phone": "(800) 748-5400",
+            "website": "https://www.blendtec.com",
+            "image": "images/blendtec.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Utah Valley University",
+            "address": "800 W University Pkwy, Orem, UT 84058",
+            "phone": "(801) 863-8888",
+            "website": "https://www.uvu.edu",
+            "image": "images/uvu.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "SCERA Center for the Arts",
+            "address": "745 S State St, Orem, UT 84058",
+            "phone": "(801) 225-2787",
+            "website": "https://scera.org",
+            "image": "images/scera.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "University Place Orem",
+            "address": "575 E University Pkwy, Orem, UT 84097",
+            "phone": "(801) 224-0694",
+            "website": "https://www.universityplaceorem.com",
+            "image": "images/university-place.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "Tucanos Brazilian Grill",
+            "address": "545 E University Pkwy, Orem, UT 84097",
+            "phone": "(801) 224-4774",
+            "website": "https://www.tucanos.com",
+            "image": "images/tucanos.webp",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Clyde Companies",
+            "address": "730 N 1500 W, Orem, UT 84057",
+            "phone": "(801) 802-6900",
+            "website": "https://www.clydeinc.com",
+            "image": "images/clyde-companies.webp",
+            "membershipLevel": 3
+        },
+        {
+            "name": "JCW's The Burger Boys",
+            "address": "396 E University Pkwy, Orem, UT 84058",
+            "phone": "(801) 225-5297",
+            "website": "https://www.jcws.com",
+            "image": "images/jcws.webp",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Mountainland Technical College",
+            "address": "1410 W 1250 S, Orem, UT 84058",
+            "phone": "(801) 753-4100",
+            "website": "https://mtec.edu",
+            "image": "images/mtec.webp",
+            "membershipLevel": 2
+        }
+    ]
 }

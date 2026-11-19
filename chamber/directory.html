@@ -1,105 +1,64 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Directory | Orem Chamber of Commerce</title>
-  <meta name="description" content="Explore the official Orem Chamber of Commerce business directory featuring leading local companies, educators, and services in Orem, Utah.">
-  <meta name="author" content="Charlie Sparrow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business directory for the Orem Chamber of Commerce featuring local companies and organizations in Orem, Utah.">
+    <meta name="author" content="Charlie Sparrow">
+    <title>Business Directory | Orem Chamber of Commerce</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
 
-  <!-- Open Graph Social Media Meta Tags -->
-  <meta property="og:title" content="Business Directory | Orem Chamber of Commerce">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://charlielsparrow.github.io/wdd231/chamber/images/orem-chamber-og.webp">
-  <meta property="og:url" content="https://charlielsparrow.github.io/wdd231/chamber/directory.html">
-  <meta property="og:description" content="Explore the official Orem Chamber of Commerce business directory featuring local companies, educators, and community leaders in Orem, Utah.">
+    <meta property="og:title" content="Business Directory | Orem Chamber of Commerce">
+    <meta property="og:description" content="Business directory for the Orem Chamber of Commerce featuring local companies and organizations in Orem, Utah.">
+    <meta property="og:image" content="https://charlielsparrow.github.io/wdd231/chamber/images/orem-chamber-og.webp">
+    <meta property="og:url" content="https://charlielsparrow.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
 
-  <!-- Google Fonts with Two-Step Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- Stylesheets: Normalize first, then custom CSS -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Deferred JavaScript -->
-  <script src="scripts/directory.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">▲</span>
-        <div class="brand-text">
-          <span class="brand-title">Orem Chamber</span>
-          <span class="brand-subtitle">Family City USA • Utah</span>
+    <header>
+        <span>Orem Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Open Navigation">☰</button>
+    </header>
+
+    <nav id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid-btn" class="active">Grid</button>
+            <button id="list-btn">List</button>
         </div>
-      </div>
 
-      <button id="menu-button" class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
-        <span class="hamburger-icon" aria-hidden="true"></span>
-      </button>
+        <div id="members-container" class="grid"></div>
+    </main>
 
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary Navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="directory-main">
-    <section class="directory-hero">
-      <div class="hero-content">
-        <h1>Orem Business Directory</h1>
-        <p>Connecting innovation, education, and commerce at the base of Mount Timpanogos.</p>
-      </div>
-
-      <div class="view-controls" role="group" aria-label="Directory layout view">
-        <button id="grid-btn" class="view-btn active" type="button" aria-pressed="true">
-          <span aria-hidden="true">⊞</span> Grid View
-        </button>
-        <button id="list-btn" class="view-btn" type="button" aria-pressed="false">
-          <span aria-hidden="true">☰</span> List View
-        </button>
-      </div>
-    </section>
-
-    <div id="members-container" class="members-grid" aria-live="polite">
-      <!-- Dynamically populated by scripts/directory.js -->
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-contact">
-        <h2>Orem Chamber of Commerce</h2>
-        <p>575 E University Pkwy, Bldg B</p>
-        <p>Orem, UT 84097</p>
-        <p><a href="mailto:info@oremchamber.org">info@oremchamber.org</a></p>
-        <p><a href="tel:+18012262122">(801) 226-2122</a></p>
-      </div>
-
-      <div class="footer-social">
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Orem Chamber on YouTube">YT</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Orem Chamber on X">X</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Orem Chamber on LinkedIn">IN</a>
-      </div>
-
-      <div class="footer-meta">
-        <p><strong>WDD231 Class Project</strong></p>
-        <p>Charlie Sparrow</p>
-        <p>&copy; <span id="currentyear"></span> Orem Chamber of Commerce</p>
-        <p id="lastModified"></p>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Orem Chamber of Commerce</strong></p>
+            <p>575 E University Pkwy, Orem, UT 84097</p>
+            <p>info@oremchamber.org | (801) 226-2122</p>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="currentyear"></span> | Charlie Sparrow | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
